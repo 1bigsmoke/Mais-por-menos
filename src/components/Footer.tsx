@@ -7,7 +7,6 @@ import {
   Instagram,
   Mail,
   Phone,
-  Pin,
   TikTok,
   Youtube,
 } from "./icons";
@@ -45,9 +44,10 @@ export default function Footer() {
       <div className="bg-grape">
         <div className="mx-auto max-w-[1320px] px-5 py-14 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-12">
-            {/* brand */}
+            {/* Brand */}
             <div className="lg:col-span-4">
               <Logo />
+
               <p className="mt-5 max-w-sm text-[1.02rem] leading-relaxed text-cream/85">
                 Tudo o que você precisa, por um precinho que você ama!{" "}
                 <span className="text-sun">
@@ -72,27 +72,28 @@ export default function Footer() {
                 ))}
               </div>
 
-                
-                </p>
+              <div className="mt-6 space-y-3 text-[0.9rem] text-cream/80">
                 <p className="flex items-center gap-2.5">
                   <Phone className="h-4.5 w-4.5 shrink-0 text-sun" />
                   (00) 9999-9999
                 </p>
+
                 <p className="flex items-center gap-2.5">
                   <Mail className="h-4.5 w-4.5 shrink-0 text-sun" />
                   atendimento@maispormenos.com.br
                 </p>
+
                 <p className="flex items-center gap-2.5">
                   <Clock className="h-4.5 w-4.5 shrink-0 text-sun" />
                   Seg a Sex, das 7h às 18h
                 </p>
               </div>
-
             </div>
 
-            {/* categories */}
+            {/* Categories */}
             <div className="lg:col-span-3">
               <h3 className="label text-sun">Categorias</h3>
+
               <ul className="mt-5 space-y-2.5">
                 {CATEGORIES.map((c) => (
                   <li key={c.id}>
@@ -108,9 +109,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* about */}
+            {/* About */}
             <div className="lg:col-span-2">
               <h3 className="label text-sun">Sobre a loja</h3>
+
               <ul className="mt-5 space-y-2.5">
                 {[
                   "Nossa história",
@@ -132,9 +134,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* support */}
+            {/* Support */}
             <div className="lg:col-span-3">
               <h3 className="label text-sun">Atendimento</h3>
+
               <ul className="mt-5 space-y-2.5">
                 {[
                   "Central de atendimento",
@@ -154,27 +157,31 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
 
-              
-
+          {/* Copyright */}
           <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/15 pt-7 md:flex-row">
             <p className="text-center text-[0.82rem] text-cream/70 md:text-left">
-              © 2027 Mais por Menos — Todos os direitos reservados. 
+              © 2027 Mais por Menos — Todos os direitos reservados.
             </p>
+
             <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[0.72rem] uppercase tracking-[0.14em] text-cream/60">
               <a href="#inicio" className="transition-colors hover:text-sun">
                 Política de privacidade
               </a>
+
               <a href="#inicio" className="transition-colors hover:text-sun">
                 Termos de uso
               </a>
+
               <a href="#inicio" className="transition-colors hover:text-sun">
                 Cookies
               </a>
             </div>
           </div>
-
-          
+        </div>
+      </div>
     </footer>
   );
 }
